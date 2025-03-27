@@ -385,3 +385,137 @@ footer .column > a:hover{
         grid-template-columns: 1fr 150px;
     }
 }
+
+.gallery-section {
+    background-color: #154360;
+    padding: 4rem 2rem;
+    border-radius: 15px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b5345;
+    padding: 2rem;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-control {
+    background: rgba(243, 156, 18, 0.7);
+    color: #ebf5fb;
+    border: none;
+    padding: 15px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 0 10px 10px 0;
+}
+
+.carousel-control.prev {
+    border-radius: 0 10px 10px 0;
+}
+
+.carousel-control.next {
+    border-radius: 10px 0 0 10px;
+}
+
+.carousel-control:hover {
+    background: #f39c12;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-indicator {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(235, 245, 251, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicator.active {
+    background-color: #f39c12;
+}
+
+#olympiades .content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#olympiades .content p {
+    flex: 1;
+    line-height: 1.8;
+}
+
+#olympiades .content img {
+    flex: 1;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+    #olympiades .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #olympiades .content img {
+        width: 100%;
+    }
+}
+
+.box {
+    background-color: #154360;
+    padding: 4rem 2rem;
+    border-radius: 15px;
+}
